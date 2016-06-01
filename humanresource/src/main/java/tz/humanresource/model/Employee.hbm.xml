@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping  package="tz.humanresource.model">
+	<class name="Employee" table="employeetable">
+		<id name="empid" column="empid">
+			<generator class="native"/>
+		</id>
+		<property name="firstname" column="firstname" />
+		<property name="middlename" column="middlename" />
+		<property name="lastname" column="lastname" />
+		<property name="title" column="Title" />
+		<property name="doe" column="DOE" />
+		<property name="address" column="address" />
+		<property name="salary" column="salary" />
+		<property name="pension" column="pension" />
+		<property name="loans" column="loans" />
+		<property name="department" column="department" />
+	</class>	
+</hibernate-mapping>
